@@ -26,13 +26,13 @@
     </com.google.android.material.appbar.AppBarLayout>
 
 
-<!--    <androidx.fragment.app.FragmentContainerView-->
-<!--        android:id="@+id/fragment_conversion"-->
-<!--        android:name="com.example.drawer1_1.views.ConversionFragment"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
-<!--        tools:layout="@layout/fragment_conversion" />-->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_conversion"
+        android:name="by.bsuir.unitconverter.views.ConversionFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layout="@layout/fragment_conversion" />
 
 
 
