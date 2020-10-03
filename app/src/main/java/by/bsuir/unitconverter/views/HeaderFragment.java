@@ -50,7 +50,7 @@ public class HeaderFragment extends Fragment {
 
         FragmentManager fragmentManager = requireActivity().getSupportFragmentManager(); // Return the FragmentManager for interacting with fragments associated with this activity.
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        //todo разобраться более как происходят транзакции
+
         fragmentTransaction.replace(R.id.fragment_numPad, numPadFragment).hide(numPadFragment).commit(); // This back stack is managed by the Activity. It allows the user to return to the previous Fragment state by pressing the Back button.
 
 

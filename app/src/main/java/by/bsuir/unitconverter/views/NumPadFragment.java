@@ -48,7 +48,6 @@ public class NumPadFragment extends Fragment {
         rootView.findViewById(R.id.button_del).setOnClickListener(item -> model.selectButton("del"));
         rootView.findViewById(R.id.button_equal).setOnClickListener(item -> model.selectButton("="));
 
-
         return rootView;
     }
 

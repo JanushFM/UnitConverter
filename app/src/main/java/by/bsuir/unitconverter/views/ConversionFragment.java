@@ -80,7 +80,6 @@ public class ConversionFragment extends Fragment {
         leftButton.setChecked(true);
         RadioButton rightButton = mGrpTo.findViewById(toUnit.getId());
         rightButton.setChecked(true);
-
     }
 
     private RadioButton getRadioButton(Unit u) {
@@ -96,7 +95,6 @@ public class ConversionFragment extends Fragment {
     private void swapUnits() {
         int fromId = mGrpFrom.getCheckedRadioButtonId();
         int toId = mGrpTo.getCheckedRadioButtonId();
-
 
         ((RadioButton) mGrpFrom.findViewById(toId)).setChecked(true);
         ((RadioButton) mGrpTo.findViewById(fromId)).setChecked(true);
