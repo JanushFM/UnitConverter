@@ -1,4 +1,4 @@
-package by.bsuir.unitconverter.views;
+package unitconverter;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

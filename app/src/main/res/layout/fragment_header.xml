@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:paddingTop="4dp"
     android:paddingBottom="8dp"
-    tools:context=".views.HeaderFragment">
+    tools:context="unitconverter.HeaderFragment">
 
     <TableRow>
 

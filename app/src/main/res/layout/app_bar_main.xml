@@ -28,7 +28,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment_conversion"
-        android:name="by.bsuir.unitconverter.views.ConversionFragment"
+        android:name="unitconverter.ConversionFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
