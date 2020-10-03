@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">UnitConverter</string>
+
+    <!--  Categories  -->
+    <string name="area">Area</string>
+    <string name="storage">Digital Storage</string>
+    <string name="time">Time</string>
+
+
     <string name="button_seven">7</string>
     <string name="button_eight">8</string>
     <string name="button_nine">9</string>
