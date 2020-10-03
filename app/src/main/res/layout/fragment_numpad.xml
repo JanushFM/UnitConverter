@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="bottom|center"
+    android:columnCount="5"
+    android:orientation="horizontal"
+    tools:context=".views.NumPadFragment"
+    android:rowCount="4">
+
+
+    <Button
+        android:id="@+id/button_seven"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="@string/button_seven" />
+
+    <Button
+        android:id="@+id/button_eight"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="@string/button_eight" />
+
+    <Button
+        android:id="@+id/button_nine"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="@string/button_nine" />
+
+    <Button
+        android:id="@+id/button_division"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="@string/button_division" />
+
+    <Button
+        android:id="@+id/button_del"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="@string/button_del" />
+
+    <Button
+        android:id="@+id/button_four"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="@string/button_four" />
+
+    <Button
+        android:id="@+id/button_five"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="@string/button_five" />
+
+    <Button
+        android:id="@+id/button_six"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="@string/button_six" />
+
+    <Button
+        android:id="@+id/button_multiply"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="@string/button_multiply" />
+
+    <Button
+        android:id="@+id/button_clear"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="@string/button_clear" />
+
+
+    <Button
+        android:id="@+id/button_one"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="@string/button_one" />
+
+    <Button
+        android:id="@+id/button_two"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="@string/button_two" />
+
+    <Button
+        android:id="@+id/button_three"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="@string/button_three" />
+
+    <Button
+        android:id="@+id/button_minus"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="@string/button_minus" />
+
+    <Button
+        android:id="@+id/button_equal"
+        android:layout_width="match_parent"
+        android:layout_rowSpan="2"
+        android:layout_gravity="fill_vertical"
+        android:text="@string/button_equal" />
+
+
+    <Button
+        android:id="@+id/button_zero"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:text="@string/button_zero" />
+
+    <Button
+        android:id="@+id/button_dot"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="@string/button_dot" />
+
+    <Button
+        android:id="@+id/button_plus"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="@string/button_plus" />
+
+</GridLayout>
