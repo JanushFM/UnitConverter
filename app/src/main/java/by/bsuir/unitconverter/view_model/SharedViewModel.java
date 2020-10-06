@@ -28,7 +28,7 @@ public class SharedViewModel extends ViewModel implements LifecycleObserver {
     private final MutableLiveData<HashMap<Integer, Unit>> selectedToUnits = new MutableLiveData<>(FromToItemsDefaultValue.getDefaultHashMap());
     private final MutableLiveData<Integer> toolbarTitleResourceID = new MutableLiveData<>(R.string.area);
 
-    private int previousMenuItem = R.id.areaFragment;
+    private int previousCategoryID = R.id.areaFragment;
 
     public void selectButton(String button_selected) {
         buttonSelected.setValue(Calculator.processExpr(button_selected));
@@ -36,11 +36,11 @@ public class SharedViewModel extends ViewModel implements LifecycleObserver {
     }
 
     public void selectUnitListAndToolbarTitle(int categoryID) {
-        if (previousMenuItem != categoryID) {
-            previousMenuItem = categoryID;
+        if (previousCategoryID != categoryID) {
+            previousCategoryID = categoryID;
             List<Unit> unit;
             switch (categoryID) {
-                case R.id.storageFragment:
+                case R.id.storageFragment: // todo лучше было бы исплоьзовать enum для отхода  от view (сейчас мы используем связанный с ним R.id)
                     toolbarTitleResourceID.setValue(R.string.storage);
                     unit = ConversionData.getStorageConversions();
                     break;
