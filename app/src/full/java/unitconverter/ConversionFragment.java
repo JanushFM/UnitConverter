@@ -87,7 +87,7 @@ public class ConversionFragment extends Fragment {
 
         btn.setId(u.getId());
         btn.setTag(u);
-        btn.setText(u.getLabelResource());
+        btn.setText(u.getLabel());
         btn.setChecked(false);
         return btn;
     }

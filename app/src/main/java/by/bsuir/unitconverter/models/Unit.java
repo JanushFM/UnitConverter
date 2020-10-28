@@ -38,17 +38,52 @@ public class Unit {
     public static final int MILLISECOND = 1007;
     public static final int NANOSECOND = 1008;
 
+    // Area
+    public final static String sq_kilometre = "Sq Kilometre";
+    public final static String sq_metre = "Sq Metre";
+    public final static String sq_centimetre = "Sq Centimetre";
+    public final static String hectare = "Hectare";
+    public final static String sq_mile = "Sq Mile";
+    public final static String sq_yard = "Sq Yard";
+    public final static String sq_foot = "Sq Foot";
+    public final static String sq_inch = "Sq Inch";
+    public final static String acre = "Acre";
+
+    // Digital Storage
+    public final static String bit = "Bit";
+    public final static String Byte = "Byte";
+    public final static String kilobit = "Kilobit";
+    public final static String kilobyte = "Kilobyte";
+    public final static String megabit = "Megabit";
+    public final static String megabyte = "Megabyte";
+    public final static String gigabit = "Gigabit";
+    public final static String gigabyte = "Gigabyte";
+    public final static String terabit = "Terabit";
+    public final static String terabyte = "Terabyte";
+
+    // Time
+    public final static String year = "Year";
+    public final static String month = "Month";
+    public final static String week = "Week";
+    public final static String day = "Day";
+    public final static String hour = "Hour";
+    public final static String minute = "Minute";
+    public final static String second = "Second";
+    public final static String millisecond = "Millisecond";
+    public final static String nanosecond = "Nanosecond";
+
+
 
 
 
     private int id;
-    private int labelResource;
+    private String label;
     private double conversionToBase;
     private double conversionFromBase;
 
-    public Unit(int id, int labelResource, double conversionToBase, double conversionFromBase) {
+    public Unit(int id, String label, double conversionToBase, double conversionFromBase) {
         this.id = id;
-        this.labelResource = labelResource;
+        this.label = label;
         this.conversionToBase = conversionToBase;
         this.conversionFromBase = conversionFromBase;
     }
@@ -65,7 +100,7 @@ public class Unit {
         return conversionFromBase;
     }
 
-    public int getLabelResource() {
-        return labelResource;
+    public String getLabel() {
+        return label;
     }
 }
