@@ -1,8 +1,8 @@
 package by.bsuir.unitconverter.models;
 
 
-
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import by.bsuir.unitconverter.R;
@@ -16,6 +16,9 @@ public class ConversionData {
     // ConversionToBase - сколко в одной единице SqlMetre будет числа
     // conversionFromBase - сколько SQ_Meters в этой величине
     //Sq_kilometer, metres ... - ID for radioButton
+    public static final String Area = "Area";
+    public static final String Storage = "Digital Storage";
+    public static final String Time = "Time";
 
     public static List<Unit> getAreaConversions() {
         //Base Unit = area
@@ -62,4 +65,21 @@ public class ConversionData {
         units.add(new Unit(NANOSECOND, R.string.nanosecond, 0.000000001, 1000000000.0));
         return units;
     }
+
+    public static HashMap<String, Unit> getDefaultHashMap() {
+        HashMap<String, Unit> map = new HashMap<>();
+        map.put(Area, new Unit(SQ_KILOMETRES, R.string.sq_kilometre, 1000000.0, 0.000001));
+        map.put(Storage, new Unit(BIT, R.string.bit, 0.00000011920928955078, 8388608.0));
+        map.put(Time, new Unit(YEAR, R.string.year, 31536000.0, 0.0000000317097919837645865));
+        return map;
+    }
+
+    public static HashMap<String, List<Unit>> getConversions() {
+        HashMap<String, List<Unit>> conversions = new HashMap<>();
+        conversions.put(Area, getAreaConversions());
+        conversions.put(Storage, getStorageConversions());
+        conversions.put(Time, getTimeConversions());
+        return conversions;
+    }
+
 }

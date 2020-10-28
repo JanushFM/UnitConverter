@@ -16,7 +16,7 @@ import com.google.android.material.navigation.NavigationView;
 import by.bsuir.unitconverter.R;
 import by.bsuir.unitconverter.view_model.SharedViewModel;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener  {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawer;
     private Toolbar toolbar;
@@ -45,13 +45,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        model.getToolbarTitleResourceID().observe(this, titleResourceID -> toolbar.setTitle(getString(titleResourceID)));
+        model.getToolbarTitle().observe(this, title -> toolbar.setTitle(title));
     }
 
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        model.selectUnitListAndToolbarTitle(item.getItemId());
+        model.selectUnitListAndToolbarTitle(item.getTitle().toString());
         drawer.closeDrawer(GravityCompat.START);
 
         return true;
